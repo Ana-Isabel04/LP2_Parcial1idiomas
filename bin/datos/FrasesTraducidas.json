@@ -1,0 +1,69 @@
+{
+  "frases": [
+    {
+      "texto": "Hola",
+      "traducciones": [
+        { "idioma": "Aleman", "textoTraducido": "Hallo" },
+        { "idioma": "Frances", "textoTraducido": "Salut" },
+        { "idioma": "Ingles", "textoTraducido": "Hello" },
+        { "idioma": "Ruso", "textoTraducido": "привет (privet)" },
+        { "idioma": "Portugués", "textoTraducido": "Olá" }
+      ]
+    },
+    {
+      "texto": "Buenos días",
+      "traducciones": [
+        { "idioma": "Aleman", "textoTraducido": "Guten morgen" },
+        { "idioma": "Frances", "textoTraducido": "Bonjour" },
+        { "idioma": "Ingles", "textoTraducido": "Good morning" },
+        { "idioma": "Ruso", "textoTraducido": "Доброе утро (Dobroye utro)" }
+      ]
+    },
+    {
+      "texto": "Buenas Tardes",
+      "traducciones": [
+        { "idioma": "Aleman", "textoTraducido": "Guten nachmittag" },
+        { "idioma": "Frances", "textoTraducido": "Bonsoir" },
+        { "idioma": "Ingles", "textoTraducido": "Good afternoon" },
+        { "idioma": "Ruso", "textoTraducido": "Добрый день (Dobryy den')" }
+      ]
+    },
+    {
+      "texto": "Buenas Noches",
+      "traducciones": [
+        { "idioma": "Aleman", "textoTraducido": "Gute nacht" },
+        { "idioma": "Frances", "textoTraducido": "Bonne nuit" },
+        { "idioma": "Ingles", "textoTraducido": "Good evening" },
+        { "idioma": "Ruso", "textoTraducido": "Спокойной ночи (Spokoynoy nochi)" }
+      ]
+    },
+    {
+      "texto": "Cómo estas?",
+      "traducciones": [
+        { "idioma": "Aleman", "textoTraducido": "Wie geht es dir" },
+        { "idioma": "Frances", "textoTraducido": "Comment est il vous?" },
+        { "idioma": "Ingles", "textoTraducido": "How are you?" },
+        { "idioma": "Ruso", "textoTraducido": "Как ты (Kak ty)" },
+        { "idioma": "Italiano", "textoTraducido": "Come stai?" }
+      ]
+    },
+    {
+      "texto": "Cómo te llamas?",
+      "traducciones": [
+        { "idioma": "Aleman", "textoTraducido": "Wie heißt du?" },
+        { "idioma": "Frances", "textoTraducido": "Comment tu t'apelles?" },
+        { "idioma": "Ingles", "textoTraducido": "What is your name?" },
+        { "idioma": "Ruso", "textoTraducido": "Как тебя зовут (Kak tebya zovut)" }
+      ]
+    },
+    {
+      "texto": "De dónde vienes?",
+      "traducciones": [
+        { "idioma": "Aleman", "textoTraducido": "Wo kommst du her" },
+        { "idioma": "Frances", "textoTraducido": "D'où viens-tu?" },
+        { "idioma": "Ingles", "textoTraducido": "Where you come from?" },
+        { "idioma": "Ruso", "textoTraducido": "Откуда ты родом? (Otkuda ty rodom?)" }
+      ]
+    }
+  ]
+}
