@@ -45,27 +45,23 @@ public class FrmAppidiomas extends JFrame {
 
         String nombreArchivo = System.getProperty("user.dir")
                 + "/src/datos/FrasesTraducidas.json";
-        // Cargar JSON desde archivo
 
         try {
             ObjectMapper objectMapper = new ObjectMapper();
             data = objectMapper.readValue(new File(nombreArchivo), FrasesData.class);
-            System.out.println(data);
-            // Obtener lista única de idiomas
+
             idiomasUnicos = data.getFrases().stream()
                     .flatMap(frase -> frase.gettraducciones().stream())
                     .map(Traduccion::getidioma)
                     .distinct()
                     .sorted()
                     .collect(Collectors.toList());
-            System.out.println(idiomasUnicos);
 
             frasesUnicas = data.getFrases().stream()
                     .map(Frase::getTexto)
                     .distinct()
                     .sorted()
                     .collect(Collectors.toList());
-            System.out.println(frasesUnicas);
 
         } catch (Exception ex) {
             JOptionPane.showMessageDialog(null, "No se pudieron cargar los datos: " + ex);
@@ -126,7 +122,7 @@ public class FrmAppidiomas extends JFrame {
         selecIdioma = (String) cmbIdiomas.getSelectedItem();
         if (selecFrase == "Selecciona la frase" || selecIdioma == "Selecciona el idioma") {
             JOptionPane.showMessageDialog(null, "Debes seleccionar una frase y un idioma para poder traducir.");
-            return; // Salir del método si no hay selección
+            return;
         }
         boolean traduccionEncontrada = false;
         for (Frase frase : data.getFrases()) {
@@ -134,16 +130,15 @@ public class FrmAppidiomas extends JFrame {
                 for (Traduccion traduccion : frase.gettraducciones()) {
                     if (traduccion.getidioma().equals(selecIdioma)) {
                         txtFrasestraducciones.setText(traduccion.gettextoTraducido());
-                        traduccionEncontrada=true;
-
-
-                    }
+                        traduccionEncontrada = true;
 
                     }
 
                 }
 
             }
+
+        }
 
         if (!traduccionEncontrada) {
             JOptionPane.showMessageDialog(null, "La frase seleccionada no tiene traducción");
@@ -178,7 +173,6 @@ public class FrmAppidiomas extends JFrame {
     private void Play() {
         String fraseformateada = formatearTexto(selecFrase);
         String ruta = "src/Audios/" + fraseformateada + "-" + selecIdioma + ".mp3";
-        System.out.println(ruta);
         ReproductorAudio.reproducir(ruta);
     }
 }
